@@ -6,7 +6,6 @@ const notesCon = document.querySelector("#notes-container")
 
 function loadNotes() {
     let notes;
-
     const writtenNotes = localStorage.getItem("notes");
     if (writtenNotes) {
         notes = JSON.parse(writtenNotes);
@@ -27,14 +26,12 @@ saveBtn.addEventListener("click", () => {
         alert("Please fill in both fields");
         return;
     }
+
+    const newNote = {
+        title: noteTitle,
+        content: noteContent
+    }   
+
+    notes.push(newNote);
+    
 })
-
-const note = {
-    title: "",
-    content: ""
-}
-
-const LoadNotes = () => {
-    const writtenNotes = localStorage.getItem("notes");
-    note.title.push(writtenNotes)
-}
