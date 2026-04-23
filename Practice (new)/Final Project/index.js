@@ -1,4 +1,3 @@
-```javascript
 const searchBox = document.querySelector("#search-input")
 const title = document.querySelector("#note-title")
 const Textarea = document.querySelector("#note-content")
@@ -14,7 +13,6 @@ function loadNotes() {
     else {
         notes = [];
     }
-    renderNotes(notes)
     console.log(notes)
 }
 
@@ -32,8 +30,6 @@ saveBtn.addEventListener("click", () => {
     const newNote = {
         title: noteTitle,
         content: noteContent
-    }   
-
-    notes.push(newNote);
+    };
     
-})
+});
