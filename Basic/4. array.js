@@ -1,5 +1,3 @@
-var Sanu;
-Sanu = ["Cat","Bat","Ball"]
-// var Sanu = ["Cat","Bat","Ball"]
+const arr = ["Sanuj","Zoro"]
 
-console.log(Sanu[0])
+console.log(arr[1]);
